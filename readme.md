@@ -1,26 +1,30 @@
-# Decentralized Escrow Application
+# Децентрализованное приложение Эскроу 
 
-This is an Escrow Dapp built with [Hardhat](https://hardhat.org/).
+Распределенное приложение для расчетов эскроу без доверенных третьих лиц.  
 
-## Project Layout
+Проект содержит фронтенд и демонстрацию основных возможностей по созданию и тестированию смарт-контрактов с помощью библиотеки [Hardhat](https://hardhat.org/).
 
-There are three top-level folders:
+## Структура проекта
 
-1. `/app` - contains the front-end application
-2. `/contracts` - contains the solidity contract
-3. `/tests` - contains tests for the solidity contract
+Проект включает в себя три директории: 
 
-## Setup
+1. `/app` - фронтенд приложения на `React`
+2. `/contracts` - исходный код смарт-контракта на языке `Solidity`
+3. `/tests` - локальные тесты смарт-контракта
 
-Install dependencies in the top-level directory with `npm install`.
+## Установка
 
-After you have installed hardhat locally, you can use commands to test and compile the contracts, among other things. To learn more about these commands run `npx hardhat help`.
+Клонируйте репозиторий и установите зависимости из корневого каталога командой `npm install`.
+После  установки `hardhat` вы можете скомпилировать и протестировать смарт-контракт локально, без подключения к сети Ethereum. 
+Справку по командам `hardhat` можно получить командой `npx hardhat help`.
 
-Compile the contracts using `npx hardhat compile`. The artifacts will be placed in the `/app` folder, which will make it available to the front-end. This path configuration can be found in the `hardhat.config.js` file.
+## Компиляция смарт-контракта
+Скомпилируйте контракт командой `npx hardhat compile`. 
+Артифакты (результаты компиляции) будут размещены в папке с файлами фронтенда `/app`.
+Параметры компиляции можно настроить в файле  `hardhat.config.js`.
 
 ## Front-End
-
-`cd` into the `/app` directory and run `npm install`
-
-To run the front-end application run `npm start` from the `/app` directory. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Откройте новое окно терминала, перейдите в папку `/app` и установите зависимости командой `npm install`
+Запустите приложение командой `npm start`
+Откройте [http://localhost:3000](http://localhost:3000) в своем браузере.
 
